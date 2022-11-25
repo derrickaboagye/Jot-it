@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<Title> Jot-it!</Title>
+
+<h1 style="color: white;"> Jot-it!</h1>
+<link rel="icon" href="brain.jpeg" type="image/icone type">
+
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./src/style.css">
+
+
+<style>
+h1{
+
+ position: relative;
+top: -220px;
+font-size: 45px;
+
+
+}
+
+h2{
+position: relative;
+top: -220px;
+font-size: 45px;
+
+
+}
+
+body{
+--color-primary:#009579;
+--color-primar-dark: #007f67;
+--color-secondary: #252c6a;
+--color-error: rgba(238, 10, 10, 0);
+--color-succes: #22d918;
+-boarder-radius: 5px;
+
+
+margin:  1 ;
+height: 80vh;
+display: flex;
+align-items: center;
+display: flex;
+
+font-size: 12px ;
+margin-bottom: 2rem;
+
+
+
+}
+
+.container{
+ width: 40%;
+ margin: auto;
+ padding: 10px;
+ box-shawdow: 0 0 40px rgba(0,0, 0, 0.2);
+ border radius: var(--boarder-radius);
+background: white;
+ 
+}
+
+.container,
+.form__input,
+.form__button{
+font: 500 1rem 'quicksand', sans-serid;
+
+
+}
+.form>*: first child{
+margin-top: 0;
+
+}
+
+.form> * *:last-child {
+
+    margin-bottom: 0;
+}
+
+.form__title{
+margin-bottom: 2rem;
+text-align: center;
+
+}
+
+
+.form__message{
+
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form__input-error-message{
+    color: var(--color-succes)
+}
+
+.form__input-error-message{
+color:var(--color-error)
+
+}
+
+
+.form__input{
+
+    display: block;
+    width: 100%;
+    paddint: 0.75 rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background-color: white;
+    transition: backround 0.2s, border-color 0.2s;
+
+}
+
+.form__input:focus{
+    border-color: car(--color-primary)
+    background: #ffffff;
+}
+
+
+
+</style>
+
+</head>
+
+
+<body style= "background-color: black;">
+  <h2 style="color: white;"> Let Your Imagination Flow!</h2>
+<div class="container">
+<form action=" Next" class="form" id="login"> 
+    
+    <div class="form__message form__message--error"> Incorrect Username/Password </div>
+    <div class="form__input-group"> 
+        <input type="text" class="form__input" placeholder="username or email">
+        <div class= "form__input-error-message"> This is a error messagee </div>
+    </div>
+
+
+
+    <div class="form__input-group"> 
+        <input type="password" class="form__input" placeholder="Password">
+        <div class= "form__input-error-message"> This is a error message </div>
+    </div>
+<p class="form__text">
+<button class="form__button" type="submit"> Continue </button>
+
+
+<a href="#" class="form__link"> Forgot your password?</a>
+
+<p class="form__text">
+    <a href="#" class="form__link"> Not a user? Sign up for Free</a>
+
+</p>
+
+
+
+</form>
+
+
+
+</div>
+
+<scriot src="./src/main.js"> </scriot>
+</body>
+
+
+</html>
